@@ -1,1 +1,13 @@
-<body style="margin:0;overflow:hidden"><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script><script>T=THREE;s=new T.Scene;c=new T.PerspectiveCamera(60,innerWidth/innerHeight,.1,100);c.position.set(4,4,6);c.lookAt(0,0,0);r=new T.WebGLRenderer;r.setSize(innerWidth,innerHeight);document.body.appendChild(r.domElement);g=new T.BoxGeometry(1,1,1);m=new T.MeshBasicMaterial({color:0xaa8866});maze="1111100110011111";w=4;h=4;for(i=0;i<maze.length;i++){if(maze[i]=='1'){x=i%w-Math.floor(w/2);z=Math.floor(i/w)-Math.floor(h/2);b=new T.Mesh(g,m);b.position.set(x,.5,z);s.add(b)}}fl=new T.Mesh(new T.PlaneGeometry(w,h),new T.MeshBasicMaterial({color:0x888}));fl.rotation.x=-Math.PI/2;fl.position.y=0;s.add(fl);r.render(s,c)</script>
+<!DOCTYPE html>
+<html>
+  <style>
+    p {
+      font-size: 30px,
+      text-align: center,
+      font-family: sans-serif,
+    }
+  </style>
+  <body>
+    
+  </body>
+</html>
